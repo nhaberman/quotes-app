@@ -7,7 +7,6 @@
 
 import SwiftUI
 import AVFoundation
-import Foundation
 
 struct QuoteDetailView: View {
     
@@ -33,26 +32,10 @@ struct QuoteDetailView: View {
 //                }
 //            }
             Button {
-                print("speak")
-                
-                let formatter = DateFormatter()
-                formatter.dateStyle = .short
-                formatter.timeStyle = .none
-                let quoteDate = formatter.string(from: quote.quoteTime)
-                
-                let utterance = AVSpeechUtterance(string: "\(quote.quoteText), \(quoteDate)")
-                utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+                let utterance = AVSpeechUtterance(string: quote.getQuoteForSpeech())
+                utterance.voice = VoiceUtilities.getBestAvailableVoice()
                 utterance.rate = 0.5
-                
-                for availableVoice in AVSpeechSynthesisVoice.speechVoices() {
-                    
-                    
-                    
-                    print(availableVoice.name)
-                }
-                
                 synthesizer.speak(utterance)
-                
             } label: {
                 Label("Speak", systemImage: "speaker.wave.2.bubble")
             }

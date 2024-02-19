@@ -25,4 +25,16 @@ final class Quote {
             self.tags.append("tag 2")
         }
     }
+    
+    private func getDateForSpeech() -> String {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .none
+        
+        return formatter.string(from: quoteTime)
+    }
+    
+    func getQuoteForSpeech() -> String {
+        return "\(quoteText), \(getDateForSpeech())"
+    }
 }

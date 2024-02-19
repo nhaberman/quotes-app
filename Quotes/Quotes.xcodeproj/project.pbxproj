@@ -15,6 +15,7 @@
 		0756C8462B82BD5600355DD4 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0756C8452B82BD5600355DD4 /* QuoteView.swift */; };
 		0756C8482B82C00E00355DD4 /* QuoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0756C8472B82C00E00355DD4 /* QuoteDetailView.swift */; };
 		0756C84A2B82DDBA00355DD4 /* AddQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0756C8492B82DDBA00355DD4 /* AddQuoteView.swift */; };
+		07F2E3822B83F14800AFA515 /* VoiceUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2E3812B83F14800AFA515 /* VoiceUtilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0756C8452B82BD5600355DD4 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
 		0756C8472B82C00E00355DD4 /* QuoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailView.swift; sourceTree = "<group>"; };
 		0756C8492B82DDBA00355DD4 /* AddQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuoteView.swift; sourceTree = "<group>"; };
+		07F2E3812B83F14800AFA515 /* VoiceUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceUtilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				0756C8452B82BD5600355DD4 /* QuoteView.swift */,
 				0756C8472B82C00E00355DD4 /* QuoteDetailView.swift */,
 				0756C8492B82DDBA00355DD4 /* AddQuoteView.swift */,
+				07F2E3812B83F14800AFA515 /* VoiceUtilities.swift */,
 				0756C8352B82B5A700355DD4 /* Assets.xcassets */,
 				0756C8372B82B5A700355DD4 /* Quotes.entitlements */,
 				0756C83B2B82B5A700355DD4 /* Info.plist */,
@@ -158,6 +161,7 @@
 				0756C8302B82B5A600355DD4 /* QuotesApp.swift in Sources */,
 				0756C84A2B82DDBA00355DD4 /* AddQuoteView.swift in Sources */,
 				0756C8462B82BD5600355DD4 /* QuoteView.swift in Sources */,
+				07F2E3822B83F14800AFA515 /* VoiceUtilities.swift in Sources */,
 				0756C8482B82C00E00355DD4 /* QuoteDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
