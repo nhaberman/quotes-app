@@ -14,7 +14,7 @@ struct QuotesApp: App {
         let schema = Schema([
             Quote.self,
         ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false, cloudKitDatabase: .private("iCloud.com.quotes.container"))
 
         do {
             
